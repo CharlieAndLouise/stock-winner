@@ -6,12 +6,12 @@ import { PATH_FRAGMENTS } from '../app-routing.module';
 @Injectable({
   providedIn: 'root'
 })
-export class DeviceDetectorGuard implements CanActivate, CanActivateChild, CanLoad {
+export class DeviceDetectorGuard implements CanActivate, /*CanActivateChild,*/ CanLoad {
   constructor(private router: Router) {}
 
   canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      return this.router.navigate([PATH_FRAGMENTS.DESKTOP]);
+      return this.router.navigate([PATH_FRAGMENTS.MOBILE]);
     }
     else {
       return this.router.navigate([PATH_FRAGMENTS.DESKTOP]);
