@@ -6,6 +6,7 @@
 
     .main-frame-header {
         background-color: #072D4E;
-
+        display: flex;
+        flex-direction: row-reverse;
     }
 }

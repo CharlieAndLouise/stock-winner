@@ -1,0 +1,30 @@
+:host {
+    .flex-container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-table {
+        display: table;
+        width: 350px;
+        
+    }
+
+    .content-row {
+        display:table-row; 
+    }
+
+    .content-cell-title {
+        display: table-cell;
+        padding: 10px 0 10px 0;
+        width: 100px;
+    }
+
+    .content-cell {
+        display: table-cell;
+        padding: 10px 0 10px 0;
+    }
+}

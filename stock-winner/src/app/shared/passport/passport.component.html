@@ -1,0 +1,27 @@
+<div class="flex-container">
+  <div class="content-table">
+    <div class="content-row">
+      <div class="content-cell-title">Username</div>
+      <div class="content-cell">
+        <input nz-input placeholder="username or email address" 
+          [(ngModel)]="userName" 
+          [ngModelOptions]="{updateOn:'blur'}" />
+      </div>
+    </div>
+    <div class="content-row">
+      <div class="content-cell-title">Password</div>
+      <div class="content-cell">
+        <input nz-input placeholder="password" type="password"
+          [(ngModel)]="password"
+          [ngModelOptions]="{updateOn:'blur'}" />
+      </div>
+    </div>
+    <div class="content-row">
+      <div class="content-cell">
+        <a href="#" (click)=";return false;">
+          <img src="/assets/images/GitHub-Mark-32px.png" alt="" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
